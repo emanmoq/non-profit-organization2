@@ -605,7 +605,11 @@ color:#646464
     height: 100%;
 }
 .BlogImg img{
-    height: 100%;;
+ width: auto;
+ height: 100%;
+}
+.BlogSlider.owl-carousel .owl-item img{
+    width:auto
 }
 .BlogDesc{
     width:55%;
