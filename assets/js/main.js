@@ -40,7 +40,8 @@ jQuery(function ($) {
     
       return false;
     });
-    $('.CausesSlider').owlCarousel({
+    
+    $('.whatweDoCar').owlCarousel({
       autoplay: true,
       loop: true,
       dots:true,
@@ -58,10 +59,30 @@ jQuery(function ($) {
         }
       }
     });
+    $('.CausesSlider').owlCarousel({
+      autoplay: true,
+      loop: true,
+      nav:true,
+      dots:false,
+      margin: 15,
+      responsive: {
+        0: {
+          items: 1,
+          margin:0,
+        },
+        600: {
+          items: 2,
+        },
+        1000: {
+          items: 3,
+        }
+      }
+    });
     $('.LatestCar').owlCarousel({
       autoplay: true,
       loop: true,
-      dots:true,
+      nav:true,
+      dots:false,
       margin: 15,
       responsive: {
         0: {
@@ -80,10 +101,32 @@ jQuery(function ($) {
         }
       }
     });
+    $('.VolunteerCar').owlCarousel({
+      autoplay: true,
+      loop: true,
+      nav:true,
+      dots:false,
+      margin: 110,
+      responsive: {
+        0: {
+          items: 1,
+     
+          margin:0,
+        },
+        1000: {
+          items: 2,
+        },
+        1150:{
+          items: 3,
+        }
+      }
+    });
+    
     $('.BlogSlider').owlCarousel({
       autoplay: true,
       loop: true,
-      dots:true,
+      nav:true,
+      dots:false,
       margin: 15,
       responsive: {
         0: {
@@ -92,10 +135,10 @@ jQuery(function ($) {
 
         },
         600: {
-          items: 2,
+          items: 1,
         },
         1000: {
-          items: 3,
+          items: 2,
         }
       }
     });

@@ -1,11 +1,4 @@
-@font-face{
-    font-family: "Lato-Semibold";
-    src:url("../fonts/Lato-Semibold.ttf")
-}
-@font-face{
-    font-family: "Lato-Medium";
-    src:url("../fonts/Lato-Medium.ttf")
-}
+
 /* public */
 img{
     width:100%;
@@ -25,8 +18,8 @@ a:hover{
 }
 body{
     box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
-    position: relative;
+    font-family: 'Poppins', sans-serif;
+     position: relative;
     overflow-x: hidden;
     font-size: 16px;
 }
@@ -57,19 +50,29 @@ header{
     width:100%;
 }
 .nav-item{
-    padding-left:30px;
-    padding-right:30px;
+    padding-left:20px;
+    padding-right:20px;
 }
 .navbar-expand-lg .navbar-nav .nav-link{
-font-size:1.250em;
+font-size:1.375em;
 color:white;;
 position: relative;
 padding:0;
-font-family: "Lato-Medium";
 }
-.navbar-expand-lg .navbar-nav .nav-link.active{
-    color:#FFA500;
+.navbar-expand-lg .navbar-nav .nav-link:before{
+    position: absolute;
+    content: "";
+    height:1px;
+    background-color: white;
+    bottom: -4px;
+    width:0;
 }
+.navbar-expand-lg .navbar-nav .nav-link.active:before{
+    width:100%;
+    transition: all .5s;;
+
+}
+
 button.navbar-toggler {
     position: relative;
     border: none;
@@ -77,12 +80,12 @@ button.navbar-toggler {
     cursor: pointer;
     border-radius: 0;
     opacity: 1;
-    border:1px solid #FFA500;
+    border:1px solid #F7CA44;
     text-align: center;
     width:50px;
 }
 button.navbar-toggler i {
-    background-color: #FFA500;
+    background-color: #F7CA44;
     border-radius: 2px;
     content: '';
     display: block;
@@ -123,30 +126,29 @@ button.navbar-toggler i:nth-child(2) {
     .scrollNav .navbar-expand-lg .navbar-nav .nav-link{
         color:#121212;;
     }
-    .scrollNav .navbar-expand-lg .navbar-nav .nav-link.active{
-        color:#FFA500
+    .scrollNav .navbar-expand-lg .navbar-nav .nav-link:before{
+        background-color: #121212;
+    
     }
-    .slider-section{ 
+    .Hero-section{ 
         position: relative;
         width: 100%;
         overflow: hidden;
+        background-image: url("../images/Home/homeImg.png");
+        background-size: cover;
+        padding-top:200px;
+        padding-bottom: 431px;
+        color: white;
+        background-repeat: no-repeat;
     }
-    .slider-section .overlay{
+    .Hero-section h1{
+        font-size:4.375em;
+        margin-bottom:45px;
+    }
+    .Hero-section .overlay{
         z-index: 1;
     }
 
-    .slider-section .carousel-inner .carousel-item{
-    width: 100%;
-    height: 100%;
-    }
-    .slider-section .carousel-inner .carousel-item img{
-    width: 100%;
-    height: 100%;
-    }
-    .carousel-inner {
-        justify-content: center;
-        height:850px;
-    }
 
     /****************Animation of mobile Toggler****************/
 @-webkit-keyframes nav1 {
@@ -204,7 +206,8 @@ margin-bottom:50px;
 }
 
 section{
-    padding-top:100px;
+    padding:100px 0;;
+    
 }
 
 .carousel-item .carousel-caption h1{
@@ -222,28 +225,39 @@ height: 60px;
 border:0;
 margin: 0 20px;
 }
+/*----------- Video -----------------*/
+.heroVideo{
+    margin-top:-345px;
+    padding-bottom:130px;
+}
 /*--------------About Us ----------*/
 #aboutus{
-    padding-bottom: 100px;
+    padding-bottom: 80px 0;
+    background-color: #F5F5F5;
+    position: relative;
 }
 .aboutImg{
     border-radius: 10px;
     overflow: hidden;
-    height:550px;
+    position: relative;
+    margin-top:65px;
 }
-.aboutImg img{
+.YellowBackground{
+    position: absolute;
+    width:40%;
+    left:0;
+    background-color: #F7CA44;
     height:100%;
+    top:0;
 }
 .title{
-    margin-top:30px;
-    margin-bottom:30px;
+    margin-bottom:90px;
 }
-.title.marginTitle{
-    margin-top:100px;
-}
+
 .title h3{
-    font-family: "Lato-Semibold";
     font-size:2.500em;
+    font-weight: 600;
+    
 }
 .title p{
     font-size:  1.125em;
@@ -253,7 +267,7 @@ margin: 0 20px;
 #aboutus .counterBox{
     width:100%;
     background-color:white;
-    padding:10px;
+    padding:30px 30px;
     box-shadow: 0px 3px 26px rgba(0, 0, 0, 0.16);
         text-align: center;
         border-radius: 10px;;
@@ -266,8 +280,8 @@ margin: 0 20px;
 }
 .countNum{
 font-size: 1.850em;
-font-family: "Lato-Medium";
 color:#121212;
+font-weight: 600;;
 }
 .counterBox span{
     color:#777373;
@@ -276,8 +290,8 @@ color:#121212;
 }
 
 .Donate{
-    background-color: #FFA500;
-    border-radius: 10px;
+    background-color: #F7CA44;
+    border-radius: 20px;
     height:50px;
     margin-top:5px;
     color:white;
@@ -285,105 +299,60 @@ color:#121212;
     font-family: "Lato-Medium";
     font-size:1.250em;
     padding:8px 35px;
-    border:1px solid #FFA500;
+    border:1px solid #F7CA44;
     transition: all .5s;;
 }
 .Donate:hover{
     background-color: white;
-    color:#FFA500;
+    color:#F7CA44;
     transition: all .5s;;
 }
 #aboutus .Donate{
     margin-bottom:30px;
 }
-/*--------- Donate Today ----------------*/
-#DonateToday{
-    background-image: url("../images/aboutbg.png");
-    padding-bottom: 100px;
-}
-
-.checkboxContainer{
+.whatDoItem{
     text-align: center;
 }
-.checkboxCont{
-    position: relative;
+.whatDoItem h3{
+    margin-bottom: 15px;
+    font-size: 1.550em;
 }
-.checkboxCont input{
-    width:0;
-    height: 0;;
-    opacity: 0;
-    cursor: pointer;
-    position: absolute;
+.whatDoItemImg{
+    width:100px;
+    margin:auto;
+    margin-bottom:22px;
+    height:100px;
+    
 }
-.stepsForm .checkboxCont:first-child .checkboxStyle{
-    margin-left:0;
+.whatDoItemImg img{
+    height:100%;
 }
-.checkboxStyle{
-position: relative;
-display: inline-block;
-margin-left:7px;
-width:92px;
-height:50px;
-background-color:transparent;
-border-radius: 10px;
-text-align:center;
-line-height: 15px;
-font-family: "Lato-Medium";
-font-size:1.250em;
-border:1px solid #121212;
-padding:15px;
-margin-right:20px;
+.whatDoItem p{
+    color:#646464;
+    font-size: 1.175em;
 }
-.checkboxCont input[type=radio]:checked ~ .checkboxStyle {
-    background-color:#FFA500;
-    color:white;
-    border:1px solid #FFA500;
 
-  }
-  .donateInput{
-      border:0;
-      background-color: transparent;
-      height:50px;
-      border-bottom: 1px solid #121212;;
-  }
-  .donateInput:focus{
-      box-shadow: none;
-      border:0;
-  }
-  .donateInput::placeholder{
-color:#777373;
-font-family: "Lato-Medium";
-font-size:1.250em;
-border:0;
-display: inline-block;
-
-  }
-  .checkboxContainer {
-      margin:50px 0;
-  }
-  video{
-      border-radius: 10px;
+  iframe{
+      border-radius: 25px;
       overflow: hidden;
-      width:550px;
+      width:100%;
   }
   .marginTop{
       margin-top:80px;
   }
   .CausesCard{
-      border-radius: 15px;
+      border-radius: 25px;
       overflow: hidden;
       box-shadow: 0 3px 25px rgba(0, 0, 0, 0.16);
       width:100%;
       border:1px solid transparent;
-
   }
   .causesImg{
       border-radius: 15px;
       overflow: hidden;
-      height: 200px;
   }
   .CausesCard:hover{
-      border:1px solid #FFA500
+      border:1px solid #F7CA44
 
   }
   .CausesCard:hover img{
@@ -399,49 +368,68 @@ display: inline-block;
   }
   .CausesCard:hover  .causesDesc h4{
     transition: all .5s;;
-      color:#FFA500
+      color:#F7CA44
   }
   .causesDesc h4{
       font-size:1.750em;
       font-family: "Lato-Medium";
 color:#121212;
-margin-bottom:35px;
+margin-bottom:15px;
 transition: all .5s;;
   }
-  .time{
-      margin-bottom:30px;
-  }
+
   .causesDesc p{
       font-size:1.250em;
       color:#777373;
-      margin-bottom:30px;
+      margin-bottom:20px;
+      overflow: hidden;
+      height:65px;
+
   }
-  .time  i{
-margin-right:10px;
+  .causesDesc span{
+    font-size: 1.175em;
+    color:#B9B9B9
+  }
+  .ReadMore{
+      color:#F7CA44;
+      text-decoration: underline;
   }
   .progContainer{
-      margin-bottom: 30px;
+      margin: 20px 0;
   }
-  .progContainer span,.time span{
+  .progContainer span{
     font-size:1.050em;
     color:#121212;
   }
   .progContainer span.goldenTxt{
-      color:#FFA500;
-
+      color:#F7CA44;
   }
   .progress{
       margin-top:10px;
       width:100%;
       height:5px;
+      overflow: visible;
+    
   }
   .progress-bar{
-      background-color: #FFA500;
+      background-color: #F7CA44;
       height:5px;
+      overflow-y: visible;
+      position: relative;
+ 
   }
+  .progress-barEnd{
+ 
+      position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #F7CA44;
+    border-radius: 50%;
+    right: -12px;
+    top: -5px;
+}
   .owl-carousel .owl-stage-outer { 
     overflow: visible;
-    padding:30px;
     }
     
  .owl-carousel .owl-item {
@@ -451,10 +439,26 @@ margin-right:10px;
  .owl-carousel .owl-item.active {
       opacity: 1;
     }
-    .owl-dots{
+    .owl-nav{
         width:100%;
         margin-top:50px;
         text-align: center;
+    }
+    .owl-nav button span {
+        line-height: 20px;
+        font-size: 30px;
+    
+    }
+    .owl-nav button{
+        margin:5px;
+        width:40px !important;
+        height:40px !important;
+        border-radius: 50%;
+        border:1px solid #707070 !important;
+    }
+    .owl-nav button:hover{
+        background-color: #F7CA44 !important;
+        color:white !important
     }
    .owl-dot{
         width:12px;
@@ -464,18 +468,15 @@ margin-right:10px;
         margin:6px;
     }
    .owl-dot.active{
-        background-color: #FFA500 !important;
+        background-color: #F7CA44 !important;
     }
     #LatestDonation{
         padding-bottom:130px;
     }
     .DonationsBox{
-        background-color: white;
-        border-radius: 10px;
         overflow: hidden;
-        box-shadow: 0 3px 25px rgba(0, 0, 0, 0.16);
-        padding:25px 10px 35px 10px;
         transition: all .5s;
+        border-radius: 25px;;
     }
     .DonationsBox:hover{
         box-shadow: 0 3px 25px rgba(0, 0, 0, 0.2);
@@ -483,22 +484,17 @@ margin-right:10px;
         margin-top:-10px;
     }
     .DonationsImg{
-        width:75px;
-        height:75px;
-        border-radius: 50%;
-        display: inline-block;
-        float: left;
-        margin-right:10px;
+        border-radius: 25px;
+        width:100%;
+        margin-bottom:20px;
     }
     .DonationsDesc{
-        display: inline-block;
-        float: left;
+       text-align: center;
     }
     .DonationsDesc h4{
-        font-size:1.550em;
-        font-family: "Lato-Medium";
+        font-size:1.650em;
         color: #121212;
-        margin-bottom: 20px;;
+        margin-bottom: 6px;;
     }
     .DonationsDesc p{
         color:#777373;
@@ -507,165 +503,219 @@ margin-right:10px;
     }
     .DonationsDesc p.marginZero{
         margin-bottom: 0;;
+        color:#F7CA44;
+        font-size: 1.125em;
     }
-    .DonationsDesc a{
-        color:#FFA500;
-        font-size: 1em;
-        text-decoration: underline;
+
+/*----------------- success ---------------*/
+#success{
+  background-image: url("../images/home/background.png");
+  background-size: cover;
+  padding:100px 0;
+}
+.successImg{
+height:440px;
+border-radius: 25px;
+overflow: hidden;
+}
+.successImg img{
+    height:100%;
+}
+.Donate.white-bg{
+    background-color:white;
+    color:#121212;
+}
+.title span{
+    display: block;
+    margin:30px 0;
+    color:#646464; 
+    font-weight: 600; 
+}
+.title.succsesTitle{
+    margin-top:45px;
+}
+.title.succsesTitle h3{
+    color:#121212;
+    font-size:2.375em;
+}
+.title.succsesTitle p {
+    color:#646464
+}
+/*-------- Volunteer ---------------------*/
+.VolunteerCarItem{
+    width:100%;
+    box-shadow: 0px 3px 26px #00000029;
+border-radius: 25px;
+text-align: right;
+padding:30px;
+position: relative;
+height: 375px;;
+}
+.VolunteerCarItem:hover {
+    box-shadow: 0px 5px 28px #00000029;
+}
+.VolunteerCarItem:hover .VolnteerImg{
+
+animation: right .8s ease-in-out alternate;
+}
+.VolunteerSocial{
+    display: block;
+    margin-top:65px;
+}
+.VolunteerSocial li{
+    margin-bottom:25px;
+}
+.VolunteerCar{
+    margin-top:90px;
+}
+.VolnteerImg{
+    position: absolute;
+    right: 20%;
+    top: -18%;
+    width:100%
+}
+
+.volDesc h5{
+    font-size:26px;
+}
+.VolunteerCarItem:hover .volDesc h5{
+    color:#F7CA44;
+}
+.volDesc p{
+font-size :20px;
+color:#646464
+}
+@keyframes right {
+    10%{
+     right:22%;
     }
-    .DonationsDesc p span{
-        color:#121212;
-    }
-    /*-----------Events --------------*/
-    #Events{
-        background-image: url("../images/events.png");
-        padding-bottom: 140px;
-        background-size: cover;
-    }
-    #Events .title{
-        color:white;
-        margin-bottom: 80px;
-    }
-    .EventsSec li{
-        padding-bottom: 15px;
-        border-bottom: 1px solid #FFFFFF;
-        padding-top:15px;
-        margin-top:-10px;
-    }
-    .EventsSec li:last-child{
-        border-bottom: 0;
-    }
-    .EventsSec li:first-child{
-        padding-top:0;
-    }
-    .eventsDate{
-display: inline-block;
-float: left;
-margin-right:16px;
-    }
-    .eventsDate span{
-        display: block;
-        font-size: 1.750em;
-        font-family: "Lato-Semibold";
-        color:white;
-    }
-    .eventsDate p{
-        margin:0;
-        font-size: 1.105em;
-    }
-    .eventDetails{
-        display: inline-block;
-        float: right;
-        margin-top:9px;
-    }
-    .eventDetails h6{
-        color:white;
-        font-family: "Lato-Semibold";
-        font-size: 1.430em;
-        display: inline-block;
-        margin: 0;
-    }
-    .goldenTxt{
-        color:#FFA500
-    }
-    #Events .aboutImg {
-        height:350px;
-     }
-     .timeLocation {
-         margin-top:9px;
-     }
-     .timeLocation span{
-         font-size: 1.05em;
-         color:white;
-         margin-right:80px;
-     }
-     .timeLocation span i{
-         margin-right:5px;
-     }
+    30% {
+      right:25% }
+      50%{
+        right:28% 
+      }
+      70%{
+        right:25%;
+      }
+      90%{
+        right:22% 
+      }
+    100% {
+      right:20%} }
+   
      /*-------------- Blog ----------------*/
-     #Blog{
-         padding-bottom:100px;
-     }
-     #Blog .title{
-         margin-bottom:80px;
-     }
-     .blogHeader .eventsDate p{
-         color:white;
-     }
-     .blogHeader{
-         padding-bottom: 15px;
-         border-bottom:1px solid #C9C9C9;
-         margin-bottom: 10px;
-     }
-     .blogHeader .eventsDate{
-         background-color: #FFA500;
-         padding:15px;
-         border-radius: 10px;
-     }
-     .blogHeader .blogTitle {
-         display: inline-block;
-         float: right;
-         width:75%;
-     }
-     .blogHeader .blogTitle h4{
-        color:#121212;
-        font-size:1.8em;
-        margin-bottom: 8px;
-     }
-     .blogAdmin span i{
-         margin-right:5px;
-     }
-     .blogAdmin span{
-color:#777373;
-font-size:1.250em
-     }
-     .BlogSlider .CausesCard a{
-         display: block;
-         color:#121212;
-         font-size: 1.250em;
-         text-decoration: underline;
-     }
-     .BlogSlider .CausesCard p{
-         margin-bottom: 10px;
-         max-height:119px;
-         overflow: hidden;
-       
-     }
-     /*---------Footer ------------*/
+  .BlogBox{
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 3px 25px rgba(0, 0, 0, 0.16);
+    width:100%;
+    border:1px solid transparent;
+    height: 470px;
+}
+.BlogImg{
+    border-radius: 15px;
+    overflow: hidden;
+    width:45%;
+    float: left;
+    height: 100%;
+}
+.BlogImg img{
+    height: 100%;;
+}
+.BlogDesc{
+    width:55%;
+    float: left;
+    display: inline-block;
+    padding:65px 20px;
+}
+.BlogDate{
+    margin-bottom:28px;
+    font-size: 18px;
+    color:#121212;
+}
+.BlogDesc h4{
+font-size:28px;
+margin-bottom: 49px;;
+}
+.BlogDesc p{
+    color:#646464;
+    margin-bottom: 40px;
+}
+.BlogDesc a{
+    color:#646464;
+    font-size: 18px;
+    text-decoration: underline;
+}
+#BeVolunteer{
+    background-image: url(../images/Home/bacground-2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%;
+}
+/*--------------- Be Volunteer -------------*/ 
+.VolunteerForm{
+    margin-bottom:50px;
+}
+.VolunteerForm .form-group.halfFormgroup{
+width:48%;
+margin-right:10px;
+margin-bottom:30px;
+display: inline-block;
+}
+.VolunteerForm .form-group.halfFormgroup.marginrightZero{
+    margin-right: 0;
+}
+.VolunteerForm .form-control{
+    width:100%;
+    background-color: transparent;
+    border:0;
+    border-radius: 0;
+    border-bottom: 1px solid #646464;
+}
+.Donate.white-bg.submitBtn{
+    width:240px;
+}
+/*---------Footer ------------*/
      #footer{
-         background-color: #FFA500;
-         color:white;
+         background-color: #F1F1EB;
+         color:#121212;
          padding-top: 80px;;
      }
      .footerTitle{
-         font-size: 2.063em;
+         font-size: 1.500em;         ;
          margin-bottom: 30px;
-         font-family: "Lato-Semibold";
+        color:#F7CA44
      }
      .footerList p{
          font-size:1.250em;
-         color:white;
-         margin-bottom: 30px;;
+         color:#121212;
      }
-     .footerSocial li{
+     #footer .VolunteerSocial{
+         margin-top:0;
+     }
+     #footer .VolunteerSocial li{
         list-style: none;
         display: inline-block;
-        width:38px;
-        height:38px;
-        border-radius: 50%;
-        margin-right: 5px;;
+        margin-right: 10px;;
         text-align: center;
         transition: all .5s;
+        width:25px;
         }
-        .footerSocial li:hover a i{
+        #footer .VolunteerSocial li:last-child{
+            margin-right:0;
+        }
+        #footer .VolunteerSocial li a{
+            color:#121212
+        }
+        .VolunteerSocial li:hover a i{
         transform: scale(1.1);
         transition: all .5s;
         }
-        .footerSocial li a{
+        .VolunteerSocial li a{
             color:white;
           
         }
-        .footerSocial li a i{
+        .VolunteerSocial li a i{
         padding:10px;
           
         }
@@ -682,39 +732,25 @@ font-size:1.250em
         margin:0;
     }
   
-    .footerList form p{
-        margin-bottom:10px;
-    }
-    .footerForm .form-group{
-        width:100%;
-        position: relative;
-    }
-    .footerForm .form-group .form-control{
-        background-color: white;
-        border-radius: 10px;
-        border:0;
-    }
-    .footerForm  .form-group i{
-        position: absolute;
-        right:20px;
-        top:35%;
-    }
-    .footerForm .form-group .form-control::placeholder{
+
+    .form-group .form-control::placeholder{
         margin:0 20px;
         color:#777373;  
       font-size:1.250em;
     }
-    .footerForm .form-group .form-control:focus{
+    .form-group .form-control:focus{
         box-shadow: none;
     }
     .copyRights{
-        margin-top:40px;
-        text-align: center;
-        padding-bottom: 20px;
+        margin-top:100px;
+        padding: 20px 0;
+        border-top:1px solid #646464;
     }
     .copyRightsText{
-        font-size:1.250em;
+        font-size:1.100em;
         text-align: center;
+        color:#646464;
+        text-align: left;;
     }
 
     @media(min-width:300px) and (max-width:1024px){
@@ -813,30 +849,15 @@ right:5%;
 #Events .title,#Blog .title{
     margin-bottom: 20px;
 }
-.blogHeader .eventsDate{
-    padding:5px;
-}
+
 .causesDesc{
     padding:20px 10px;
 }
 .causesImg{
     height: auto;
 }
-.eventsDate span {
- 
-    font-size: 1.350em;
-}
-.eventsDate p {
-    font-size: .850em;}
-    .eventsDate{
-        margin-right:5px;
-    }
-    .blogHeader .blogTitle h4{
-        font-size:1.5em
-    }
-    .blogAdmin span{
-        font-size: .850em;
-    }
+
+
     .owl-dots{
         margin-top:20px;
     }
