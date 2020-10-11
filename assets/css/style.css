@@ -692,10 +692,7 @@ display: inline-block;
         #footer .VolunteerSocial li a{
             color:#121212
         }
-        .VolunteerSocial li:hover a i{
-        transform: scale(1.1);
-        transition: all .5s;
-        }
+    
         .VolunteerSocial li a{
             color:#121212;
           
