@@ -210,21 +210,7 @@ section{
     
 }
 
-.carousel-item .carousel-caption h1{
-    font-size: 2.375em;
-    font-family: "Lato-Semibold";
-    margin-bottom: 50px;;
-}
-.carousel-inner .carousel-caption{
-    top:30%;
-}
-.carousel-caption .donate{
-padding:18px 45px;
-font-size: 18px;
-height: 60px;
-border:0;
-margin: 0 20px;
-}
+
 /*----------- Video -----------------*/
 .heroVideo{
     margin-top:-345px;
@@ -261,7 +247,6 @@ margin: 0 20px;
 }
 .title p{
     font-size:  1.125em;
-    font-family: "Lato-Medium";  
     color:#777373; 
 }
 #aboutus .counterBox{
@@ -712,7 +697,7 @@ display: inline-block;
         transition: all .5s;
         }
         .VolunteerSocial li a{
-            color:white;
+            color:#121212;
           
         }
         .VolunteerSocial li a i{
@@ -762,30 +747,26 @@ padding:0px;
     .owl-carousel .owl-item{
         padding:10px;
     }
-    .carousel-inner .carousel-caption{
-        top:25%;
-    }
-    .carousel-item .carousel-caption h1{
-        font-size: 1.50em;
-    }
-    .carousel-caption{
-left:5%;
-right:5%;
-    }
-    .carousel-inner{
-        height:460px;
-    }
+
+
     .scrollNav{
         height:auto;
         background-color: white;
     }
     header{
-        height:auto;
-        background-color: rgba(255,255,255,.3);
+        height: auto;
+        background-color: rgba(0,0,0,.7);
+        z-index: 9999999999999999999999999999999999999999;
     }
+    .Hero-section h1 {
+        font-size: 2.75em;}
     .navbar-expand-lg .navbar-nav .nav-link{
-        color:#121212;
+        color:white;
     }
+    .YellowBackground{
+        display: none;
+    }
+    
     .carousel-caption .donate{
         padding: 10px 0;
         width: 120px;
@@ -798,8 +779,11 @@ right:5%;
     section,#aboutus,#Blog,#Events,#LatestDonation{
         padding:20px;
     }
+    .title{
+        margin-bottom: 20px;;
+    }
     .title.marginTitle{
-        margin-top:30px;
+        margin-top:15px;
     }
     .checkboxStyle {
         margin-left: 0px;
@@ -840,27 +824,69 @@ right:5%;
         .eventDetails {
             margin-top: 0px;
             width: 84%;}
-.title h3{
-    font-size: 2.300em;
-}
-#Events {
-    padding-bottom: 50px;
-}
-#Events .title,#Blog .title{
-    margin-bottom: 20px;
-}
+            .title h3 {
+                font-size: 2.100em;
+            }
+            .VolnteerImg {
+                position: relative;
+                display: block;
+            width:100%; 
+        right:auto;
+        top:auto;
 
-.causesDesc{
-    padding:20px 10px;
+        }
+                .VolunteerSocial{
+                    display: block;
+                    margin-top:20px;;
+                }
+                .VolunteerSocial li{
+                    display: inline-block;
+                    margin-bottom:0;
+                }
+        .VolunteerCarItem{
+            text-align: left;
+            padding: 30px;
+             height: auto;
+        }
+.BlogBox{
+    height:700px;
 }
-.causesImg{
-    height: auto;
+.BlogImg{
+    width:100%;
+    height:50%;
 }
-
-
-    .owl-dots{
-        margin-top:20px;
-    }
+.BlogImg img{
+    height:auto;
+}
+.BlogDesc{
+    width:100%;
+    padding:25px;
+}
+.BlogDesc h4{
+    margin-bottom:10px;
+}
+.BlogDesc p {
+    color: #646464;
+    margin-bottom: 22px;
+    height: 110px;
+    overflow: hidden;
+}
+.VolunteerForm .form-group.halfFormgroup{
+    width:100%;
+    margin-right:0;
+}
+.Hero-section{
+    padding-bottom: 390px;
+}
+.heroVideo{
+padding-bottom:20px;
+}
+iframe{
+    height:300px;
+}
+#aboutus .counterBox{
+padding:40px 30px;
+}
 }
 @media(min-width:767px) and (max-width:1023px){
     .owl-carousel .owl-stage-outer { 
@@ -882,14 +908,7 @@ right:5%;
         .navbar-expand-lg .navbar-nav .nav-link{
             color:#121212;
         }
-        .carousel-inner .carousel-caption{
-            top:15%;
-        }
-        .carousel-item .carousel-caption h1 {
-            font-size: 2.2em;}
-            .carousel-inner{
-                height: 640px;;
-            }
+   
             title.marginTitle{
 margin-top:20px;
             }

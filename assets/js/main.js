@@ -44,7 +44,8 @@ jQuery(function ($) {
     $('.whatweDoCar').owlCarousel({
       autoplay: true,
       loop: true,
-      dots:true,
+      dots:false,
+      nav:true,
       margin: 15,
       responsive: {
         0: {
@@ -102,7 +103,7 @@ jQuery(function ($) {
       }
     });
     $('.VolunteerCar').owlCarousel({
-      autoplay: true,
+      autoplay: false,
       loop: true,
       nav:true,
       dots:false,
