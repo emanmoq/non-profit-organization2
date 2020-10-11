@@ -889,6 +889,8 @@ padding:40px 30px;
 }
 }
 @media(min-width:767px) and (max-width:1023px){
+    .heroVideo {
+        margin-bottom: 100px;}
     .owl-carousel .owl-stage-outer { 
         overflow: hidden;
     padding:0px;
@@ -918,8 +920,16 @@ margin-top:20px;
           .blogTitle{
               width:85%;
           }
+
 }
 @media(min-width:1024px) and (max-width:1250px){
     .counterBox span {
         font-size: .850em;}
+        .nav-item {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        #aboutus .counterBox {
+            padding: 21px;
+        }
 }

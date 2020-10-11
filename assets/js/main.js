@@ -91,7 +91,7 @@ jQuery(function ($) {
      
           margin:0,
         },
-        600: {
+        760: {
           items: 2,
         },
         1000: {
@@ -114,11 +114,13 @@ jQuery(function ($) {
      
           margin:0,
         },
-        1000: {
+        760: {
           items: 2,
+          margin:0,
         },
         1150:{
           items: 3,
+          
         }
       }
     });
@@ -136,7 +138,7 @@ jQuery(function ($) {
 
         },
         600: {
-          items: 1,
+          items: 2,
         },
         1000: {
           items: 2,
