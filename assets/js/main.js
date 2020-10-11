@@ -46,6 +46,8 @@ jQuery(function ($) {
       loop: true,
       dots:false,
       nav:true,
+      navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
+
       margin: 15,
       responsive: {
         0: {

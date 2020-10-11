@@ -295,6 +295,35 @@ font-weight: 600;;
 #aboutus .Donate{
     margin-bottom:30px;
 }
+.whatweDoCar  .owl-nav button{
+    width:auto !important;
+    height:auto !important;
+    border-radius: 0;
+    border:0  !important;
+    position: absolute;
+}
+.whatweDoCar  .owl-nav{
+    position: absolute;
+    width: 100%;;
+    top:50%;
+}
+.whatweDoCar  .owl-nav button:hover i{
+   
+  
+}
+.whatweDoCar  .owl-nav button:hover{
+    background-color: transparent  !important;
+    color:#F7CA44 !important;
+}
+.whatweDoCar  .owl-nav button i{
+    font-size:30px;
+}
+.whatweDoCar  .owl-nav button.owl-prev{
+    left:-10%;
+}
+.whatweDoCar  .owl-nav button.owl-next{
+    right:-10%;
+}
 .whatDoItem{
     text-align: center;
 }
@@ -445,16 +474,7 @@ transition: all .5s;;
         background-color: #F7CA44 !important;
         color:white !important
     }
-   .owl-dot{
-        width:12px;
-        height:12px;
-        background-color: #CACACA !important;
-        border-radius: 50%;;
-        margin:6px;
-    }
-   .owl-dot.active{
-        background-color: #F7CA44 !important;
-    }
+
     #LatestDonation{
         padding-bottom:130px;
     }
