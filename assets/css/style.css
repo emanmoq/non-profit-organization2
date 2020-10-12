@@ -937,10 +937,24 @@ margin-bottom:30px;
 }
 .rightSide li{
     margin-bottom:10px;
+    border-bottom: 1px solid #F5F5F5;
+    padding-bottom: 10px;;
 }
 .rightSide li a{
     color:#646464;
     font-size:1.175rem;
+   
+}
+.blogTitleDetails{
+display: inline-block ;
+float: left;
+margin-left: 10px;;
+}
+.rightSide li  h6{
+    display: block;
+    font-size:1.05rem;
+    margin-bottom:0;
+    color:#bfbaba
 }
 .rightSide li i{
     margin-right:10px;
@@ -987,6 +1001,16 @@ background-color: #F7CA44;
 }
 .addCommentBtn{
     margin-top:20px
+}
+.recntBlogImg{
+    width:50px;
+    height:50px;
+    margin-right:5px;
+    border-radius: 5px;;
+    overflow: hidden;
+    display: inline-block;
+    float: left;
+
 }
     /*-------------------------------------------------*/
     @media(min-width:300px) and (max-width:1024px){
