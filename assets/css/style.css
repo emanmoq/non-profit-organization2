@@ -1,5 +1,13 @@
 
 /* public */
+@font-face{
+    font-family: "Lato-Semibold";
+    src:url("../fonts/Lato-Semibold.ttf")
+}
+@font-face{
+    font-family: "Lato";
+    src:url("../fonts/Lato-Regular.ttf")
+}
 img{
     width:100%;
 }
@@ -24,7 +32,6 @@ body{
     font-size: 16px;
 }
 h3{
-    font-family: "Lato-Semibold";
    font-size:2.500em;
 }
 /*******Header ****************/
@@ -36,6 +43,14 @@ header{
     width: 100%;
     top: 0;
 }
+#innerHeader{
+background-color: #121212;
+position: relative;
+}
+.innerBody{
+    padding-top:80px;
+}
+
 /********Navbar**********/
 .navbar-brand{
     font-family: 'Boogaloo';
@@ -111,7 +126,7 @@ button.navbar-toggler i:nth-child(2) {
         top: 0 !important;
         z-index: 99999999999999999999999;
         animation-duration: .5s;
-        background:white;
+        background:#121212;
         position: fixed !important;
         box-shadow: rgba(0, 0, 0, 0.1) 2px 3px 20px 3px;
         transition: 1s all;
@@ -124,10 +139,10 @@ button.navbar-toggler i:nth-child(2) {
         height:90px;
     }
     .scrollNav .navbar-expand-lg .navbar-nav .nav-link{
-        color:#121212;;
+        color:white;;;
     }
     .scrollNav .navbar-expand-lg .navbar-nav .nav-link:before{
-        background-color: #121212;
+        background-color:white;;
     
     }
     .Hero-section{ 
@@ -206,7 +221,7 @@ margin-bottom:50px;
 }
 
 section{
-    padding:100px 0;;
+    padding:85px 0;;
     
 }
 
@@ -271,18 +286,16 @@ font-weight: 600;;
 .counterBox span{
     color:#777373;
     font-size: 1.025em;
-    font-family: "Lato-Medium";
 }
 
 .Donate{
     background-color: #F7CA44;
-    border-radius: 20px;
+    border-radius: 24px;
     height:50px;
     margin-top:5px;
     color:white;
     font-weight: 500;
-    font-family: "Lato-Medium";
-    font-size:1.250em;
+    font-size:1.150em;
     padding:8px 35px;
     border:1px solid #F7CA44;
     transition: all .5s;;
@@ -385,8 +398,8 @@ font-weight: 600;;
       color:#F7CA44
   }
   .causesDesc h4{
-      font-size:1.750em;
-      font-family: "Lato-Medium";
+      font-size:1.450em;
+     
 color:#121212;
 margin-bottom:15px;
 transition: all .5s;;
@@ -475,9 +488,7 @@ transition: all .5s;;
         color:white !important
     }
 
-    #LatestDonation{
-        padding-bottom:130px;
-    }
+
     .DonationsBox{
         overflow: hidden;
         transition: all .5s;
@@ -655,6 +666,9 @@ margin-bottom: 49px;;
     font-size: 18px;
     text-decoration: underline;
 }
+.BlogDesc a:hover{
+    color:#F7CA44
+}
 #BeVolunteer{
     background-image: url(../images/Home/bacground-2.png);
     background-size: cover;
@@ -689,16 +703,30 @@ display: inline-block;
          background-color: #F1F1EB;
          color:#121212;
          padding-top: 80px;;
+         font-family: 'Open Sans', sans-serif;
      }
      .footerTitle{
          font-size: 1.500em;         ;
          margin-bottom: 30px;
-        color:#F7CA44
+        color:#F7CA44;
+        font-weight: 600;;
+     }
+     .footerTitle i{
+        font-size: 20px;
+        margin-right: 5px;
      }
      .footerList p{
          font-size:1.250em;
          color:#121212;
      }
+
+
+     i.fa.fa-clock{
+        font-weight: 500;
+
+     }
+ 
+
      #footer .VolunteerSocial{
          margin-top:0;
      }
@@ -758,8 +786,184 @@ display: inline-block;
         color:#646464;
         text-align: left;;
     }
+    /*--------------------------------------------------------*/
+    .inner-section{
+        padding:80px 0;
+        background-color: #F7CA44;
+        color:white;;
+    }
+    .innerTitle{
+        font-size:4.375em;
+        color:white;
+        font-weight: 600;
+        font-family: "Lato-Semibold";
+    }
+    .innerText p{
+        font-size:1.375em;
+       color: #121212;
+       font-family: "Lato";
+       margin-bottom: 30px;;
+    }
+.causesPage .CausesCard{
+    margin-bottom:50px;
+}
+.causesBtn{
+    margin-top:20px;
+}
+.GalleryImg{
+    border-radius: 25px;
+    margin-bottom:50px;
+    overflow: hidden;
+    display: block;
+    position: relative;
+}
+.GalleryImg:before{
+    content: "";
+    position: absolute;
+    background-color: #000;
+    opacity:0;
+    top:20%;
+    left:20%;
+    bottom:20%;
+    right:20%;
+    z-index: 1;
+    height:100%;
+    transition: all .5s;;
+    border-radius: 25px;;
+}
+.GalleryImg:hover:before{
+    opacity: .4;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    transition: all .5s;
+}
+.Blogpage .BlogBox{
+    margin-bottom:50px;
+}
+.BlogBox:hover{
+    box-shadow: 0 3px 25px rgba(0, 0, 0, 0.3);
 
+}
+
+.BlogBox:hover h4{
+    color:#F7CA44
+}
+.BlogDetails{
+    font-family: "Lato";
+}
+.BlogDetailsImg{
+    width:100%;
+    border-radius: 25px;
+    overflow: hidden;
+    margin-bottom:50px;
+}
+.BlogDeatilsDesc h4{
+   font-size: 2.063em;
+   font-family: "Lato-Semibold";
+
+}
+.blogDate{
+    margin-top:13px;
+margin-bottom:30px;
+}
+.blogDate span{
+    font-size: 	1.375rem;
+    color:#777373;
+    margin:0 15px;
+}
+.blogDate span i{
+    margin-right:10px;
+
+}
+.BlogDeatilsDesc p{
+    color:#121212;
+    font-size: 	1.375rem;
+    margin-bottom:30px;
+
+
+}
+.comments{
+    margin-bottom:50px;
+}
+.comments h4{
+    font-size:2.0625rem;
+    color:#121212;
+    font-family: "Lato-Semibold";
+    margin-bottom:40px;
+}
+.commenterImg{
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    overflow:hidden;
+    margin-right:30px;
+
+}
+.comment{
+    border: 1px solid #646464;;
+    border-radius: 25px;
+    padding:20px;
+    display: inline-block;
+    width:80%;
+}
+.comment h5{
+    font-family: "Lato-Semibold";
+    font-size: 1.75rem;
+
+}
+.commentHeadr {
+    border-bottom: 1px solid #77737373;
+    padding-bottom:20px;
+}
+.commentHeadr span{
+    color:#646464;
+    font-size:1.375rem;
+}
+.comment p{
+    color:#646464;
+    font-size:1.375rem;
+    margin-top:20px;
+}
+.commentBox{
+    margin-bottom: 30px;;
+}
+
+
+    /*-------------------------------------------------*/
     @media(min-width:300px) and (max-width:1024px){
+        .blogDate span{
+display: block;
+margin-top:20px;
+        }
+        .commenterImg {
+            width: 50px;
+            height: 50px;
+       
+            margin-right: 3px;
+        }
+        .comment {
+            padding: 8px;
+         
+            width: 82%;
+        }
+        .comment p {
+            font-size: 16px;
+            margin-top: 5px;
+        }
+        .comment h5 {
+            font-size: 1.35rem;
+            margin:0;
+        }
+        .commentHeadr {
+            padding-bottom: 6px;
+        }
+        .commentHeadr span {
+            font-size: 1.175rem;
+        }
+        .comments h4 {
+            font-size: 1.8625rem;}
 
     .owl-carousel .owl-stage-outer { 
     overflow: hidden;
@@ -772,7 +976,7 @@ padding:0px;
 
     .scrollNav{
         height:auto;
-        background-color: white;
+        background-color: #121212;
     }
     header{
         height: auto;
@@ -883,6 +1087,7 @@ padding:0px;
     width:100%;
     padding:25px;
 }
+
 .BlogDesc h4{
     margin-bottom:10px;
 }
@@ -910,6 +1115,10 @@ padding:40px 30px;
 }
 }
 @media(min-width:767px) and (max-width:1023px){
+    .blogDate span{
+        display: inline-block;
+        margin-top:20px;
+                }
     .heroVideo {
         margin-bottom: 100px;}
     .owl-carousel .owl-stage-outer { 
@@ -922,15 +1131,13 @@ padding:40px 30px;
       
        .scrollNav{
             height:auto;
-            background-color: white;
+            background-color: #121212;
         }
         header{
             height:auto;
             background-color: rgba(255,255,255,.3);
         }
-        .navbar-expand-lg .navbar-nav .nav-link{
-            color:#121212;
-        }
+ 
    
             title.marginTitle{
 margin-top:20px;
