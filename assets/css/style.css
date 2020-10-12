@@ -525,7 +525,7 @@ transition: all .5s;;
 
 /*----------------- success ---------------*/
 #success{
-  background-image: url("../images/home/background.png");
+  background-image: url("../images/Home/background.png");
   background-size: cover;
   padding:100px 0;
 }
@@ -670,7 +670,7 @@ margin-bottom: 49px;;
     color:#F7CA44
 }
 #BeVolunteer{
-    background-image: url(../images/Home/bacground-2.png);
+    background-image: url("../images/Home/bacground-2.png");
     background-size: cover;
     background-repeat: no-repeat;
     width:100%;
