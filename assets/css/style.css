@@ -929,8 +929,58 @@ margin-bottom:30px;
 .commentBox{
     margin-bottom: 30px;;
 }
+.rightSide {
+    background-color: white;
+    box-shadow: 0 3px 25px rgba(0, 0, 0, 0.3);
+    padding:20px;
+    border-radius: 25px;
+}
+.rightSide li{
+    margin-bottom:10px;
+}
+.rightSide li a{
+    color:#646464;
+    font-size:1.175rem;
+}
+.rightSide li i{
+    margin-right:10px;
+    font-size:15px;;
+    transition: all .5s;
+}
+.rightSide h6{
+    font-family: "Lato-Semibold";
+    font-size: 1.75rem;
+    margin-bottom:25px; 
+}
+.rightSide li:hover a{
+    color:#F7CA44;
+}
+.rightSide li:hover i{
+    margin-right:-3px;
+    transition: all .5s;
+}
+.tags span a{
+    background-color: #6464645e;
+    color:white;
+    padding:5px 10px;;
+    border-radius: 25px;
+    margin-right:10px;
+}
+.tags span a:hover{
+background-color: #F7CA44;
+}
 
-
+.commentBox.addComment .comment{
+    border:0;
+    padding: 0;;
+}
+.commentBox.addComment .comment .form-control{
+    border-radius: 25px;
+    resize: none;
+}
+.addCommentBtn{
+    margin-top:20px
+}
     /*-------------------------------------------------*/
     @media(min-width:300px) and (max-width:1024px){
         .blogDate span{
